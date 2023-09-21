@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Knowlage</title>
+    <link rel="shortcut icon" href="imgs/favicon_io (1)/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utitl.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="left">
+            <span><img src="/imgs/logo.png" alt=""></span>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="/about.html">About</a></li>
+                <!-- <li><a href="/contact.html">Contact</a></li> -->
+            </ul>
+        </div>
+        <!-- <div class="right">
+            <form action="/Search.html" method="get">
+            <input type="text" class="form-input" name="query" placeholder="Artical Search">
+            <button class="btn">Search</button>
+        </form> -->
+        </div>
+    </nav>
+    <div class=" m-auto max-width-1">
+        <hr>
+    </div>
+    <h3 class="max-width-1 m-auto font-2">Why computer is importent for our this new era</h3>
+
+
+
+    <li type="1" class="max-width-1 m-auto font-s">Information Access: Computers provide instant access to a vast amount
+        of information through
+        the internet. This enables us to learn, research, and stay informed on a wide range of topics</li>
+
+    <li type="1" class="font-s max-width-1 m-auto">Communication: Computers facilitate communication through email,
+        social media, and video
+        conferencing. They connect people globally, fostering collaboration and relationships</li>
+
+    <li type="1" class="font-s max-width-1 m-auto">Work and Productivity: Computers are essential tools in the
+        workplace, enabling tasks like data
+        analysis, project management, and document creation. They enhance efficiency and productivity.</li>
+
+    <li type="1" class="font-s max-width-1 m-auto">Education: Computers support modern education with e-learning
+        platforms, digital textbooks, and
+        interactive educational software, making learning more engaging and accessible.</li>
+    <li type="1" class="font-s max-width-1 m-auto">Entertainment: Computers offer entertainment through gaming,
+        streaming, and digital media. They
+        are central to our leisure activities.</li>
+
+    <li type="1" class="font-s max-width-1 m-auto">Innovation: Computers power research, development, and innovation in
+        fields like medicine,
+        engineering, and science, driving progress and breakthroughs</li>
+
+    <li type="1" class="font-s max-width-1 m-auto">Business: Businesses rely on computers for operations, inventory
+        management, customer service,
+        and online commerce, contributing to economic growth.</li>
+
+    <li type="1" class="font-s max-width-1 m-auto">Creative Expression: Computers enable creativity through graphic
+        design, video editing, music
+        production, and writing software, empowering artists and creators.</li>
+    <li type="1" class="font-s max-width-1 m-auto">Convenience: Computers automate tasks like banking, shopping, and
+        booking appointments,
+        simplifying daily life.</li>
+    <li type="1" class="font-s max-width-1 m-auto">Problem Solving: Computers assist in complex problem-solving,
+        simulations, and modeling, aiding
+        decision-making in various industries.
+
+        In essence, computers have become an integral part of modern life, enhancing our capabilities,
+        connecting us globally, and shaping the way we live, work, and interact in this era.
+
+
+
+
+    </li>
+    <div class=" m-auto max-width-1">
+        <hr>
+    </div>
+
+    <div class="m-auto max-width-1">
+        <h2 class="font-2">We try give you more Knowlage about computer</h2>
+        <p>We daily upload blogs releted to computer and we hope you will like this website bookmark our website and try
+            get more Knowlage about computer</p>
+
+        <h1 class="m-auto max-width-1 cntr">Thanks for Vist Our website </h1>
+
+    </div>
+    <div class=" m-auto max-width-1">
+        <hr>
+    </div>
+
+    <div class="comment-box">
+        <h2>Leave a Comment</h2>
+        <div class="comnt">
+
+            <textarea name="" id="comment-text" placeholder="Leave your comment here" cols="" rows="10"></textarea><br>
+        </div>
+        <button onclick="addComment()" class="btn-sub">Submit</button>
+
+        <div id="comments">
+            <!-- Comments will be displayed here -->
+        </div>
+    </div>
+    <footer class="footer-box">
+        <p>&copy; Copyright 2023 | All Rights Reserved By Ck.com<NAME>
+        </p>
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100030545346629&mibextid=9R9pXO" target="_blank" title="facebook"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/md-kaif-ali-91047a25b/" target="_blank"><i
+                    class="bi bi-linkedin" title="linkedin"></i></a>
+            <a href="https://instagram.com/abcd_404_?igshid=MzMyNGUyNmU2YQ==" target="_blank"><i
+                    class="bi bi-instagram" title="instagram"></i></a>
+            <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+            <a href="" title="github"><i class="bi bi-github"></i></a>
+            <a href="#" title="Go on Top"><i class="bi bi-file-arrow-up-fill"></i></a>
+
+        </div>
+    </footer>
+    <script>
+        // JavaScript function to add a comment
+        function addComment() {
+            var commentText = document.getElementById("comment-text").value;
+            var commentsDiv = document.getElementById("comments");
+
+            if (commentText.trim() !== "") {
+                var comment = document.createElement("div");
+                comment.className = "comment";
+                comment.textContent = commentText;
+                commentsDiv.appendChild(comment);
+                document.getElementById("comment-text").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

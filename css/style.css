@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navigation{
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    /* background-color: red; */
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.left >span{
+    width: 15%;
+
+}
+
+span > img{
+    width: 100%;
+}
+.left ul{
+    display: flex;
+}
+
+.left ul li{
+    list-style: none;
+    margin: 0 1.5rem;
+}
+.left ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.form-input{
+    padding: 3px 5px ;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.btn{
+    padding: 2px 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* ====================nav end here================================== */
+
+.content{
+    /* height: 395px; */
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+
+}
+
+.content::after{
+    content: "";
+    background-image: url('../imgs/vecteezy_illustration-of-a-work-desk-at-home-for-a-website-theme-or_5638615.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.1;
+    background-position: center;
+    background-size: cover;
+}
+
+.content-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    z-index: 1;
+}
+.content-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right .content-ryt-img{
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 2%;
+}
+
+.home-articals{
+    position: relative; 
+     padding-top:10px ;
+    margin-top: 23px;
+    /* display: grid;
+    grid-template-columns : repeat(auto-fill, minmax(30%, 1fr));
+    gap: 1rem; */
+}
+
+.year-box{
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    top: 100px;
+    right: 10px;
+    
+    /* background-color: red; */
+
+}
+
+.year-box > div{
+    margin: .5rem 0;
+}
+
+.home-artical{
+    display: flex;
+    padding: 25px;
+}
+
+.home-artical img{
+    width: 300px;
+    border-radius: 2%;
+}
+
+.home-artical-content{
+    align-self: center;
+    padding: 25px;
+}
+
+/* ========================================Footer start============================================ */
+
+.footer-box{
+    background-color: #d5d5d5;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.footer-box .footer-social{
+    margin: 1rem auto;
+}
+
+.bi{
+    padding: .5rem;
+    color: rgb(9, 9, 116);
+    cursor: pointer;
+}
+.bi:hover{
+    color: #000fffee;
+}
+
+.btn{
+    background:rgb(1, 1, 44);
+    height: 2rem;
+    padding: .5rem;
+    text-align: center;
+    margin-top: .8rem;
+}
+
+.btn > a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.btn:hover{
+    background-color: #fffe;
+    color: #0000;
+}
